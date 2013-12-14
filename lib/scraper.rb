@@ -23,9 +23,9 @@ class Scraper
         end
 
         workers.each { |w| w.join }
+        Dir.chdir('..')
 
         save_to_json(files)
-        Dir.chdir('..')
     end
 
     protected
