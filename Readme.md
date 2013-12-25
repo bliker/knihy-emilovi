@@ -12,4 +12,5 @@ Cielom projektu je ziskat, zorganizovat a spristupnit knihy zo zlateho zlateho f
 2. `cd knihy-emilovi`
 3. Nainstaluj bundler: `gem install bundler`
 4. Stiahni vsetky gems: `bundle install`
-5. Spusti `ruby app.rb` a pockaj.
+5. Spusti migraciu databazy: `sequel -m migrations/ sqlite://knihy_emilovi.db`
+6. Spusti `ruby app.rb` a pockaj.
