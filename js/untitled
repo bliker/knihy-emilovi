@@ -1,0 +1,14 @@
+require(['models', 'views'], function (models, views) {
+    views.books.model = models.books;
+    views.books.host = $('content .list-books');
+    views.books.render('list-books');
+
+    views.authors.model = model.authors;
+    views.books.host = $('content .list-authors');
+});
+
+// var model = new emil.Model()
+// model.fetch(function(data) {
+//     var view = new emil.Presenter(data)
+//     view.render('list')
+// });

@@ -61,9 +61,57 @@ textarea {
    ========================================================================== */
 
 
+body, html {
+    font-family: Lora, serif;
+    height: 100%;
+}
 
+header {
+    width: 100%;
+    color: hsl(0, 0%, 90%);
+    background-color: #D74820;
+    text-align: center;
+    height: 6%;
+    line-height: 2.2em;
+    position: relative;
+    box-shadow: 0 1px 7px hsla(0, 0%, 20%, 0.6);
+}
 
+header strong {
+    color: #fff;
+}
 
+.content {
+    padding-left: 300px;
+    height: 94%;
+    background-color: #fafafa;
+}
+
+.list-authors, .list-books {
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.list-books-item, .list-authors-item {
+    line-height: 1.6em;
+    padding: 0 0.2em 0.2em 0.2em;
+    cursor: pointer;
+}
+
+.list-books-item:hover, .list-authors-item:hover {
+    color: #D74820;
+    background-color: #fff;
+}
+
+.list-authors-item:active {
+    border-left: 2px solid #D74820;
+    text-indent: 6px;
+}
+
+.list-books-item:nth-child(2n),
+.list-authors-item:nth-child(2n) {
+    background-color: whitesmoke;
+}
 
 
 
